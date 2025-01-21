@@ -1,5 +1,153 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
     font-family: "Quicksand", serif;
+    max-width: 1920px;
 }
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ------- shared styles -------- */
+.display_flex{
+    display: flex;
+}
+
+/* ------ navbar related styles ------ */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0px;
+}
+
+.nav_left{
+    align-items: center;
+    gap: 10px;
+}
+
+.school{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(17, 17, 17, 1);
+}
+
+.list_item{
+    list-style: none;
+    padding: 0px 16px;
+}
+
+.list_item :first-child{
+    margin-left: 0px;
+}
+
+.list_item a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.home{
+   color: #FEA301;
+}
+
+.about{
+    color: #01ACFD;
+}
+
+.facilities{
+    color: #05D4DF;
+}
+
+.admission{
+    color: #5D58EF;
+}
+
+.btn_primary{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #FEA301;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 12px;
+}
+
+.btn .icon{
+    display: none;
+}
+
+/* ------ hero section --------- */
+.hero_area{
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.hero_text{
+    width: 70%;
+}
+
+.hero_text .orange{
+    color: #FEA301;
+}
+
+.hero_text .blue{
+    color: #01ACFD;
+}
+
+.hero_title{
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+}
+
+.hero_img{
+    /* width: 32%; */
+}
+
+.hero_img img{
+    width: 100%;
+}
+
+.hero_info{
+    font-size: 1.25rem;
+    margin: 24px 0px;
+}
+
+.btn_secondary{
+    background-color: rgba(17, 17, 17, 1);
+}
+
+
+
+
+
+
+
+/* ------ responsive related styles ----- */
+@media screen and (max-width: 600px) {
+    .nav_midle, .btn_primary{
+        display: none;
+    }
+    .btn .icon{
+        display: block;
+        visibility: visible;
+    }
+    .navbar{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.61);
+    }
+    .hero_area{
+        flex-direction: column-reverse;
+    }
+    .btn_secondary{
+        display: block;
+        visibility: visible;
+    }
+  }
+

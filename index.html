@@ -6,6 +6,8 @@
     <title>Kid-school</title>
     <!-- favicon link -->
     <link rel="shortcut icon" href="assets/school-logo.png" type="image/x-icon">
+    <!-- fontawesome icon link -->
+    <script src="https://kit.fontawesome.com/3c141c58e8.js" crossorigin="anonymous"></script>
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,26 +17,41 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="navbar">
-                <div class="nav_left">
+        <nav class="container">
+            <div class="navbar display_flex">
+                <div class="nav_left display_flex">
                     <img src="assets/logo.png" alt="School logo" class="logo">
                     <h3 class="school">SCHOOL</h3>
                 </div>
                 <div class="nav_midle">
-                    <ul class="list_links">
-                        <li class="list_item"><a href="#" class="list_link_1"> Home</a></li>
-                        <li class="list_item"><a href="#" class="list_link_2">About</a></li>
-                        <li class="list_item"><a href="#" class="list_link_3">Facilities</a></li>
-                        <li class="list_item"><a href="#" class="list_link_4">Admission</a></li>
+                    <ul class="list_links display_flex">
+                        <li class="list_item"><a href="#" class="home"> Home</a></li>
+                        <li class="list_item"><a href="#" class="about">About</a></li>
+                        <li class="list_item"><a href="#" class="facilities">Facilities</a></li>
+                        <li class="list_item"><a href="#" class="Admission">Admission</a></li>
                     </ul>
                 </div>
                 <div class="btn">
                     <button class="btn_primary">Contact</button>
+                    <a href="#" class="icon"><i class="fa-solid fa-bars"></i></a>
                 </div>
 
             </div>
         </nav>
+        <!-- hero section -->
+         <div class="hero_section container">
+            <div class="hero_area display_flex">
+                <div class="hero_text">
+                    <h1 class="hero_title"> <span class="orange">Empowering</span>
+                    students from small age <span class="blue">towards vision</span></h1>
+                    <p class="hero_info">Fanschool is a learning platform that helps students own their learning. It is a place where students can share their work, get feedback from their peers and teachers, and connect with other learners</p>
+                    <button class="btn_secondary btn_primary">Enroll Now</button>
+                </div>
+                <div class="hero_img">
+                    <img src="assets/hero-kids.png" alt="A image of hero kid">
+                </div>
+            </div>
+         </div>
 
     </header>
     <main>
