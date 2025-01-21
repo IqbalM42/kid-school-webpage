@@ -1,0 +1,24 @@
+
+i{
+    width: 100%;
+    text-align: center;
+}
+
+.fa-solid{
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+    background-color: #FEA301;
+}
+
+
+
+
+
+
+/* ----- responsive relative style ----- */
+@media screen and (max-width: 576px) {
+    .curriculum_info{
+        flex-direction: column;
+    }
+}

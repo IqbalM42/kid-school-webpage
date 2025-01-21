@@ -19,6 +19,12 @@ body{
     display: flex;
 }
 
+.section_description{
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
 /* ------ navbar related styles ------ */
 .navbar{
     justify-content: space-between;
@@ -86,7 +92,6 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    margin-bottom: 60px;
 }
 
 .hero_text{
@@ -124,6 +129,83 @@ body{
     background-color: rgba(17, 17, 17, 1);
 }
 
+/* ------ start curriculum section ------- */
+.curriculum_section{
+    margin: 0 auto;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.section_title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #000000;
+    padding: 60px 0px 80px 0px;
+    text-align: center;
+}
+
+.curriculum_info{
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    
+}
+
+.box_1{
+    background-image: linear-gradient(to bottom, #DEF5FF, #ffffff);
+}
+
+.box_2{
+    background-image: linear-gradient(to bottom, #F2E8FF, #ffffff);
+}
+
+.box_3{
+    background-image: linear-gradient(to bottom, #DCFFED, #ffffff);
+}
+
+.curriculum_box{
+    padding: 42px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px #afaa9e;
+    margin-bottom: 80px;
+
+.box_img{
+    width: 140px;
+    height: 140px;
+    margin-bottom: 32px;
+}
+.sub_title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.text_box{
+    text-align: justify;
+    margin-bottom: 32px;
+}
+
+.btn_curriculum{
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 5px;
+    background-color: #ffffff;
+}
+.btn_1{
+    color: #64C8FF;
+}
+
+.btn_2{
+    color: #F0AA00;
+}
+
+.btn_3{
+    color: #8700FF;
+}
+
 
 
 
@@ -131,8 +213,8 @@ body{
 
 
 /* ------ responsive related styles ----- */
-@media screen and (max-width: 600px) {
-    .nav_midle, .btn_primary{
+@media screen and (max-width: 576px) {
+    .nav_middle, .btn_primary{
         display: none;
     }
     .btn .icon{
@@ -148,6 +230,9 @@ body{
     .btn_secondary{
         display: block;
         visibility: visible;
+    }
+    .curriculum_info{
+        flex-direction: column;
     }
   }
 
