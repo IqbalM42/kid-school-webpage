@@ -1,12 +1,17 @@
 
-i{
-    width: 100%;
-    text-align: center;
+.font_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
-.fa-solid{
+.btn_icon{
     width: 60px;
     height: 60px;
+    border: none;
+    border-radius: 50%;
     color: #ffffff;
     background-color: #FEA301;
 }
@@ -16,9 +21,47 @@ i{
 
 
 
-/* ----- responsive relative style ----- */
-@media screen and (max-width: 576px) {
+/* ----- responsive relative style -----  */
+ @media screen and (max-width: 576px) {
+    .nav_middle, .btn_primary{
+        display: none;
+    }
+
+    .btn .icon{
+        display: block;
+        visibility: visible;
+    }
+
+    .navbar{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.61);
+    }
+
+    .hero_area{
+        flex-direction: column-reverse;
+    }
+
+    .hero_text{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .btn_secondary{
+        display: block;
+        visibility: visible;
+    }
+
     .curriculum_info{
         flex-direction: column;
+        gap: 20px;
     }
+
+    .curriculum_box{
+        margin-bottom: 0;
+    }
+
+    .btn_icon{
+        display: none;
+    }
+
 }

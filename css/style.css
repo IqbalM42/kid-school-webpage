@@ -112,10 +112,6 @@ body{
     line-height: 3.75rem;
 }
 
-.hero_img{
-    /* width: 32%; */
-}
-
 .hero_img img{
     width: 100%;
 }
@@ -212,27 +208,12 @@ body{
 
 
 
-/* ------ responsive related styles ----- */
-@media screen and (max-width: 576px) {
-    .nav_middle, .btn_primary{
-        display: none;
-    }
-    .btn .icon{
-        display: block;
-        visibility: visible;
-    }
-    .navbar{
-        border-bottom: 1px solid rgba(0, 0, 0, 0.61);
-    }
-    .hero_area{
-        flex-direction: column-reverse;
-    }
-    .btn_secondary{
-        display: block;
-        visibility: visible;
-    }
-    .curriculum_info{
-        flex-direction: column;
-    }
-  }
 
+/* ------ responsive related styles ----- */
+/* @media screen and (max-width: 576px) { */
+   
+   
+  
+  
+  
+}
