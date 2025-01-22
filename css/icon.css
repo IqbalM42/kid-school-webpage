@@ -17,10 +17,10 @@
 }
 
 .stories_section{
-    background-image: (../assets/bg.png), linear-gradient(top to bottom, #FEA30d, #fea20d00);
+    background-image: url(../assets/bg.png), linear-gradient(top to bottom, #fea101fb, #fea10100);
     background-repeat: no-repeat;
     background-size: 100%;
-
+}
 .stories_info{
     justify-content: space-between;
     justify-content: center;
@@ -42,20 +42,22 @@
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 2.4rem;
-    padding: 58px 0px 48px 0px;
+    padding: 38px 0px 38px 0px;
 }
 
 .stories_description{
-    padding-bottom: 34px;
+    padding-bottom: 24px;
 
 }
 
 .stories_info img{
     width: 100%;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .stories_right{
     width: 50%;
+    height: 622px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -82,7 +84,7 @@
 .box_btn_0{
     position: absolute;
     left: 36px;
-    bottom: 320px;
+    bottom: 294px;
     background-color: #3CD8E8;
 }
 
@@ -90,32 +92,38 @@
     background-color: #95B226;
     position: absolute;
     left: 18px;
-    bottom: 390px;
+    bottom: 460px;
 }
 .box_btn_2{
     background-color: #5D58F0;
     position: absolute;
     left: 255px;
-    bottom: 390px;
+    bottom: 460px;
 }
 .box_btn_3{
     background-color: #95B226;
     position: absolute;
     left: 18px;
-    bottom: 119px;
+    bottom: 148px;
 }
 .box_btn_4{
     background-color: #95B226;
     position: absolute;
     left: 255px;
-    bottom: 119px;
+    bottom: 148px;
 }
 
 .btn_stories{
  text-align: center;
     display: block;
     margin: 0 auto;
+    margin-top: 80px;
     margin-bottom: 60px;
+}
+
+.box{
+    border-radius: 10px;
+    box-shadow: 0px 0px  2px black;
 }
 
 
@@ -145,6 +153,7 @@
 
     .hero_text{
         width: 100%;
+        padding: 1.5rem;
         text-align: center;
         
     }
@@ -165,6 +174,29 @@
 
     .btn_icon{
         display: none;
+    }
+
+    .stories_left{
+        display: none;
+    }
+
+    .stories_1 button .box_btn_3{
+        position: static;
+    }
+    .stories_1 button .box_btn_2{
+        position: static;
+    }
+    .stories_1 button .box_btn_4{
+        position: static;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .stories_right{
+        width: 100%;
+        text-align: center;
     }
 
 }
