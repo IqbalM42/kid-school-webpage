@@ -16,10 +16,16 @@
     background-color: #FEA301;
 }
 
+/* ----- stories section start ------- */
+.stories{
+    background-image: linear-gradient(to top, #fea10144, #fea10100);
+
+}
 .stories_section{
-    background-image: url(../assets/bg.png), linear-gradient(top to bottom, #fea101fb, #fea10100);
+    background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-bottom: 60px;
 }
 .stories_info{
     justify-content: space-between;
@@ -118,13 +124,72 @@
     display: block;
     margin: 0 auto;
     margin-top: 80px;
-    margin-bottom: 60px;
 }
 
 .box{
     border-radius: 10px;
     box-shadow: 0px 0px  2px black;
 }
+
+/* ---- footer section start --------- */
+
+footer{
+    background-color: #01ACFD;
+}
+
+.footer_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: #ffffff;
+    padding: 120px 0px 175px 0px;
+}
+
+.footer_info{
+    width: 35%;
+    text-align: left;
+}
+
+.footer_logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.footer_title{
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.footer_sub_title,
+.footer_tuch{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+
+}
+
+.list li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.list li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_tuch{
+    font-size: 26px;
+}
+
+.socile_icon{
+    margin-right: 10px;
+}
+
+
 
 
 
@@ -144,23 +209,33 @@
     }
 
     .navbar{
+        padding: 60px 20px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.61);
+    }
+
+    .hero_section{
+        padding: 60px 20px;
     }
 
     .hero_area{
         flex-direction: column-reverse;
     }
 
+    .hero_area img{
+        width: 100%;
+    }
+
     .hero_text{
         width: 100%;
-        padding: 1.5rem;
-        text-align: center;
-        
     }
 
     .btn_secondary{
         display: block;
         visibility: visible;
+    }
+
+    .curriculum_section{
+        padding: 60px 20px;
     }
 
     .curriculum_info{
@@ -174,6 +249,10 @@
 
     .btn_icon{
         display: none;
+    }
+
+    .stories_section{
+        padding: 60px 20px;
     }
 
     .stories_left{
@@ -197,6 +276,12 @@
     .stories_right{
         width: 100%;
         text-align: center;
+    }
+
+    .footer_box{
+        flex-direction: column;
+        gap: 50px;
+        padding: 120px 20px;
     }
 
 }
